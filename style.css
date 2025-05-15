@@ -14,13 +14,13 @@ body {
 
 /* Header and Title Box */
 header {
-  background-color: #fce1df; /* match the body for seamless look */
+  background-color: #fce1df; 
   text-align: center;
   padding: 2em 0 1em;
 }
 
 .title-box {
-  background-color: #fce1df; /* optional: white highlight box */
+  background-color: #fce1df; 
   display: inline-block;
   padding: 0.5em 1em;
   border-radius: 10px;
@@ -97,7 +97,7 @@ body {
   background-image: url('images/strawberry_joahdraws.JPG'), url('images/strawberry_joahdraws.JPG');
   background-repeat: repeat-y, repeat-y;
   background-position: left top, right top;
-  background-size: 100px auto, 100px auto;
+  background-size: 400px auto, 400px auto;
   color: #d4211b;
   line-height: 1.6;
 }
