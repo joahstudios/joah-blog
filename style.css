@@ -8,19 +8,21 @@
 body {
   font-family: Georgia, serif;
   background-color: #fce1df;
+  color: #d4211b;
+  line-height: 1.6;
+
+  /* Add strawberry background on sides */
   background-image: url('images/strawberry_joahdraws.JPG'), url('images/strawberry_joahdraws.JPG');
   background-repeat: repeat-y, repeat-y;
   background-position: left top, right top;
   background-size: 300px auto, 300px auto;
-  color: #d4211b;
-  line-height: 1.6;
 }
 
-/* Header and Title Box */
+/* Header */
 header {
-  background-color: transparent;
   text-align: center;
   padding: 2em 0 1em;
+  background-color: transparent;
 }
 
 .title-box {
@@ -36,62 +38,6 @@ header {
   color: #d4211b;
 }
 
-/* Spinning ✿ */
-.spinning-flower {
-  display: inline-block;
-  animation: spinForever 4s linear infinite;
-  color: #d4211b;
-  margin: 0 0.1em;
-  font-size: 1.2em;
-}
-
-@keyframes spinForever {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 /* Navigation */
 nav {
-  display: flex;
-  justify-content: center;
-  gap: 2em;
-  margin-top: 1em;
-  position: relative;
-}
-
-nav a {
-  color: #d4211b;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
-  position: relative;
-}
-
-nav a::after {
-  content: "✿";
-  position: absolute;
-  top: -1.5em;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  font-size: 1rem;
-  color: #d4211b;
-  pointer-events: none;
-  transition: opacity 0.2s ease;
-}
-
-nav a:hover::after {
-  opacity: 1;
-}
-
-/* Main content */
-main {
-  max-width: 700px;
-  margin: 3em auto;
-  padding: 0 1em;
-  background-color: #fff;
-  border-rad
+  display:
