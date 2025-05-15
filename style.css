@@ -34,15 +34,29 @@ header {
 
 /* Navigation */
 nav a {
+  position: relative;
   color: #d4211b;
-  margin: 0 15px;
+  margin: 0 12px;
   text-decoration: none;
   font-weight: bold;
 }
 
-nav a:hover {
-  text-decoration: underline;
+nav a::after {
+  content: "✿";
+  position: absolute;
+  left: 50%;
+  right: -1.2em;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 1rem;
+  color: #d4211b;
 }
+
+nav a:hover::after {
+  opacity: 1;
+}
+
 
 /* Main content */
 main {
@@ -97,7 +111,7 @@ body {
   background-image: url('images/strawberry_joahdraws.JPG'), url('images/strawberry_joahdraws.JPG');
   background-repeat: repeat-y, repeat-y;
   background-position: left top, right top;
-  background-size: 400px auto, 400px auto;
+  background-size: 300px auto, 300px auto;
   color: #d4211b;
   line-height: 1.6;
 }
