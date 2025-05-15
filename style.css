@@ -11,7 +11,7 @@ body {
   color: #d4211b;
   line-height: 1.6;
 
-  /* Add strawberry background on sides */
+  /* strawberry background on sides */
   background-image: url('images/strawberry_joahdraws.JPG'), url('images/strawberry_joahdraws.JPG');
   background-repeat: repeat-y, repeat-y;
   background-position: left top, right top;
@@ -78,7 +78,7 @@ main {
   max-width: 700px;
   margin: 3em auto;
   padding: 0 1em;
-  background-color: #ffffff;
+  background-color: #fce1df;
   color: #d4211b;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(212, 33, 27, 0.1);
