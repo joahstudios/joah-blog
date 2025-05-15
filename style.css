@@ -69,3 +69,25 @@ footer {
   margin-top: 4em;
   font-size: 0.9em;
 }
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  margin-bottom: 2em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1em;
+}
+
+.post-list a {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #d4211b;
+  text-decoration: none;
+}
+
+.post-list a:hover {
+  text-decoration: underline;
+}
+
