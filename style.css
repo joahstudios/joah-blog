@@ -14,7 +14,7 @@ body {
 
 /* Header and Title Box */
 header {
-  background-color: #fce1df; 
+  background-color: transparent; 
   text-align: center;
   padding: 2em 0 1em;
 }
@@ -62,7 +62,7 @@ article h2 {
 
 /* Footer */
 footer {
-  background-color: #fce1df;
+  background-color: transparent;
   color: #d4211b;
   text-align: center;
   padding: 1em 0;
