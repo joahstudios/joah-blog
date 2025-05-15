@@ -7,20 +7,20 @@
 
 body {
   font-family: Georgia, serif;
-  background-color: #fce1df;
-  color: #d4211b;
+  background-color: #fce1df; /* soft pink background */
+  color: #d4211b; /* deep red text */
   line-height: 1.6;
 }
 
 /* Header and Title Box */
 header {
-  background-color: #d4211b; /* red background */
+  background-color: #fce1df; /* match the body for seamless look */
   text-align: center;
   padding: 2em 0 1em;
 }
 
 .title-box {
-  background-color: #fce1df; /* soft pink box */
+  background-color: #fff; /* optional: white highlight box */
   display: inline-block;
   padding: 0.5em 1em;
   border-radius: 10px;
@@ -34,7 +34,7 @@ header {
 
 /* Navigation */
 nav a {
-  color: #fce1df;
+  color: #d4211b;
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
@@ -56,16 +56,10 @@ article {
 }
 
 article h2 {
-  color: #444;
+  color: #d4211b;
   margin-bottom: 0.5em;
 }
 
 /* Footer */
 footer {
-  background-color: #eee;
-  color: #555;
-  text-align: center;
-  padding: 1em 0;
-  margin-top: 4em;
-  font-size: 0.9em;
-}
+  backgroun
