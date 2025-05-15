@@ -7,14 +7,14 @@
 
 body {
   font-family: Georgia, serif;
-  background-color: #fce1df;
-  color: #d4211b;
+  background-color: #fafafa;
+  color: #333;
   line-height: 1.6;
 }
 
 header {
-  background-color: #111;
-  color: #fff;
+  background-color: #fce1df;
+  color: #d4211b;
   padding: 2em 0;
   text-align: center;
 }
