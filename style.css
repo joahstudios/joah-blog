@@ -40,4 +40,108 @@ header {
 
 /* Navigation */
 nav {
-  display:
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 1em;
+  position: relative;
+  z-index: 1;
+}
+
+nav a {
+  color: #d4211b;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+nav a::after {
+  content: "✿";
+  position: absolute;
+  top: -1.5em;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  font-size: 1rem;
+  color: #d4211b;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+nav a:hover::after {
+  opacity: 1;
+}
+
+/* Main Content */
+main {
+  max-width: 700px;
+  margin: 3em auto;
+  padding: 0 1em;
+  background-color: #ffffff;
+  color: #d4211b;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(212, 33, 27, 0.1);
+  z-index: 1;
+  position: relative;
+}
+
+article {
+  margin-bottom: 3em;
+}
+
+article h2 {
+  color: #d4211b;
+  margin-bottom: 0.5em;
+}
+
+/* Post List (Blog Index Page) */
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  margin-bottom: 2em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1em;
+}
+
+.post-list a {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #d4211b;
+  text-decoration: none;
+}
+
+.post-list a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: transparent;
+  color: #d4211b;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 4em;
+  font-size: 0.9em;
+}
+
+/* Optional Spinning Flower Animation */
+.spinning-flower {
+  display: inline-block;
+  animation: spinForever 4s linear infinite;
+  color: #d4211b;
+  margin: 0 0.1em;
+  font-size: 1.2em;
+}
+
+@keyframes spinForever {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
