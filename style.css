@@ -97,7 +97,7 @@ body {
   background-image: url('images/strawberry_joahdraws.JPG');
   background-repeat: repeat-y;
   background-position: left, right;
-  background-size: auto;
+  background-size: 50px;
   color: #d4211b;
   line-height: 1.6;
 }
