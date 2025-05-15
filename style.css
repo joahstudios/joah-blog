@@ -44,19 +44,35 @@ nav a {
 nav a::after {
   content: "✿";
   position: absolute;
+  top: -1.5em;
   left: 50%;
-  top: -1.2em;
   transform: translateX(-50%);
   opacity: 0;
-  transition: opacity 0.3s ease;
   font-size: 1rem;
   color: #d4211b;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
 }
 
 nav a:hover::after {
   opacity: 1;
+  animation: spinAndGlow 1s ease-out forwards;
 }
 
+@keyframes spinAndGlow {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+    text-shadow: 0 0 0px #fff;
+  }
+  50% {
+    transform: translateX(-50%) rotate(180deg);
+    text-shadow: 0 0 8px #ffc0cb, 0 0 15px #fff2f2;
+  }
+  100% {
+    transform: translateX(-50%) rotate(360deg);
+    text-shadow: 0 0 2px #ffc0cb;
+  }
+}
 
 /* Main content */
 main {
