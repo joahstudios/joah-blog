@@ -7,25 +7,34 @@
 
 body {
   font-family: Georgia, serif;
-  background-color: #d4211b;
-  color: #fce1df;
+  background-color: #fafafa;
+  color: #333;
   line-height: 1.6;
 }
 
+/* Header and Title Box */
 header {
-  background-color: #fce1df;
-  color: #d4211b;
-  padding: 2em 0;
+  background-color: #d4211b; /* red background */
   text-align: center;
+  padding: 2em 0 1em;
 }
 
-header h1 {
+.title-box {
+  background-color: #fce1df; /* soft pink box */
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.title-box h1 {
   font-size: 2.5rem;
-  margin-bottom: 0.3em;
+  color: #d4211b;
 }
 
+/* Navigation */
 nav a {
-  color: #ddd;
+  color: #fce1df;
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
@@ -35,6 +44,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Main content */
 main {
   max-width: 700px;
   margin: 3em auto;
@@ -50,6 +60,7 @@ article h2 {
   margin-bottom: 0.5em;
 }
 
+/* Footer */
 footer {
   background-color: #eee;
   color: #555;
