@@ -127,20 +127,3 @@ footer {
   font-size: 0.9em;
 }
 
-/* Optional Spinning Flower Animation */
-.spinning-flower {
-  display: inline-block;
-  animation: spinForever 4s linear infinite;
-  color: #d4211b;
-  margin: 0 0.1em;
-  font-size: 1.2em;
-}
-
-@keyframes spinForever {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
