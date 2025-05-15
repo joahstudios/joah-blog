@@ -81,7 +81,6 @@ main {
   background-color: #fce1df;
   color: #d4211b;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(212, 33, 27, 0.1);
   z-index: 1;
   position: relative;
 }
