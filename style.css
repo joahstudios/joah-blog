@@ -18,7 +18,22 @@ header {
   text-align: center;
   padding: 2em 0 1em;
 }
+.spinning-flower {
+  display: inline-block;
+  color: #d4211b;
+  margin-left: 0.3em;
+  animation: spinForever 4s linear infinite;
+  font-size: 1.2em; /* optional: adjust size */
+}
 
+@keyframes spinForever {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .title-box {
   background-color: #fce1df; 
   display: inline-block;
@@ -48,31 +63,15 @@ nav a::after {
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
+  transition: opacity 0.3s ease;
   font-size: 1rem;
   color: #d4211b;
-  pointer-events: none;
-  transition: opacity 0.2s ease;
 }
 
 nav a:hover::after {
   opacity: 1;
-  animation: spinAndGlow 1s ease-out forwards;
 }
 
-@keyframes spinAndGlow {
-  0% {
-    transform: translateX(-50%) rotate(0deg);
-    text-shadow: 0 0 0px #fff;
-  }
-  50% {
-    transform: translateX(-50%) rotate(180deg);
-    text-shadow: 0 0 8px #ffc0cb, 0 0 15px #fff2f2;
-  }
-  100% {
-    transform: translateX(-50%) rotate(360deg);
-    text-shadow: 0 0 2px #ffc0cb;
-  }
-}
 
 /* Main content */
 main {
